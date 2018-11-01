@@ -22,6 +22,7 @@ var currentLine = function(katzDeliLine){
   for (var i = 0; i < katzDeliLine.length; i++){
     msg +=  i+1 + ". " + katzDeliLine[i] +", ";
   }
+  
   } else{
     msg = "The line is currently empty.";
   }
