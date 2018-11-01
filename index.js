@@ -18,10 +18,11 @@ var nowServing = function(katzDeliLine){
 var currentLine = function(katzDeliLine){
   var msg;
   if(katzDeliLine.length >= 1){
-  msg = "The line is currently: ";
+  queueMsg = "The line is currently: ";
   for (var i = 0; i < katzDeliLine.length; i++){
     msg +=  i+1 + ". " + katzDeliLine[i] +", ";
   }
+  msg = queueMsg.slice(0, queueMsg-1);
   } else{
     msg = "The line is currently empty.";
   }
