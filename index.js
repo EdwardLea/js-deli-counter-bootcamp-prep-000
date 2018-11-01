@@ -22,7 +22,7 @@ var currentLine = function(katzDeliLine){
   for (var i = 0; i < katzDeliLine.length; i++){
     queueMsg +=  i+1 + ". " + katzDeliLine[i] +", ";
   }
-  msg = queueMsg.slice(0, queueMsg.length-10);
+  msg = queueMsg.slice(0, queueMsg.length-2);
   } else{
     msg = "The line is currently empty.";
   }
