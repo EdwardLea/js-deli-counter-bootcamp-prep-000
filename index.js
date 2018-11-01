@@ -20,7 +20,7 @@ var currentLine = function(katzDeliLine){
   if(katzDeliLine.length >= 1){
   var queueMsg = "The line is currently: ";
   for (var i = 0; i < katzDeliLine.length; i++){
-    msg +=  i+1 + ". " + katzDeliLine[i] +", ";
+    queueMsg +=  i+1 + ". " + katzDeliLine[i] +", ";
   }
   msg = queueMsg.slice(0, queueMsg-1);
   } else{
