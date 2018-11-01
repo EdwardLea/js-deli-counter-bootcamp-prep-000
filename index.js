@@ -18,7 +18,7 @@ var nowServing = function(katzDeliLine){
 var currentLine = function(katzDeliLine){
   var msg;
   if(katzDeliLine.length >= 1){
-  queueMsg = "The line is currently: ";
+  var queueMsg = "The line is currently: ";
   for (var i = 0; i < katzDeliLine.length; i++){
     msg +=  i+1 + ". " + katzDeliLine[i] +", ";
   }
